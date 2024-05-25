@@ -1,0 +1,239 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    top: 8vh;
+    background-image: url(image.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3c3c3ce7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffe600;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(242, 218, 2);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 10vh;
+    padding: 1.5vw;
+    font-size: xx-large;
+    display: flex;
+    background-color: rgb(77, 76, 76);
+    align-items: center;
+
+    .logo {
+        padding: 0 10px;
+        color: #ffe600;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    box-shadow: 2px 2px 10px slategrey;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-bottom: 40px;
+
+}
+
+.Btn-div {
+    position: fixed;
+    z-index: 10;
+    top: 12vh;
+    right: 15px;
+    border-radius: 30px;
+
+    box-shadow: 2px 2px 5px grey;
+
+    .add {
+        font-size: 15px;
+        padding: 7px;
+        font-weight: bold;
+        border-radius: 30px;
+        border: none;
+        background-color: #fbec62;
+    }
+
+    i {
+        font-size: 17px;
+        font-weight: bolder;
+        position: relative;
+        transition: transform 0.5s ease;
+    }
+
+    .fa-plus {
+        padding-right: 5px;
+    }
+}
+
+.add:hover {
+    background-color: #fae41a;
+    cursor: pointer;
+}
+
+.add:active {
+    background-color: #ffe600;
+    transform: scale(0.96);
+}
+
+.note {
+    margin: 30px auto;
+    overflow-y: scroll;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: #ffec432b;
+    border: 2px solid black;
+    font-size: 12px;
+    scrollbar-width: none;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.note:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+    overflow-y: scroll;
+    background-color: rgba(240, 248, 255, 0.932);
+}
+
+.textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.textarea::-webkit-scrollbar-track {
+    background: #3c3c3ce7;
+    border-radius: 10px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    background: #ffe600;
+    border-radius: 5px;
+}
+
+.textarea::-webkit-scrollbar-thumb:hover {
+    background: rgb(242, 218, 2);
+    cursor: pointer;
+}
+
+.textarea::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.main {
+    padding: 5px;
+}
+
+.operation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6f6b5e;
+    box-shadow: 1px 1px 2px #ffe6003a;
+    position: sticky;
+    top: 0;
+    padding: 0 5px;
+}
+
+.date{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.opt-btn {
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 242, 0);
+
+}
+
+.save {
+    font-size: 21px;
+}
+
+.save:hover {
+    background-color: rgb(20, 218, 20);
+    color: rgba(7, 7, 7, 0.849);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opt-btn:active{
+    transform: scale(0.9);
+}
+
+.edit:hover {
+    background-color: #ffe600;
+    color: rgba(7, 7, 7, 0.849);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: rgb(236, 27, 27);
+    color: rgba(7, 7, 7, 0.849);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 2.5vh;
+    background-color: #6f6b5e;
+    color: #fbec62;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
